@@ -37,6 +37,7 @@ function addNode(parent, name, properties){
     for(brother of nodes[name].brothers){
        nodes[brother].brothers.push(name)
     }
+    console.log(nodes)
 }
 
 

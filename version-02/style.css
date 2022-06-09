@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    -webkit-tap-hightlight-color: transparent;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background:#f8fafc;
+    font-family: 'Segoe UI';
+    color: #303338;
+    font-size: 14px;
+}
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 3px 5px 20px #E1E1E1;
+    border-radius: 1rem;
+    height: 100vh;
+    background: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding:1.2rem 1rem;
+
+}
+
+.form {
+    display: flex;
+    margin-top: 1rem;
+}
+.form .form-control{
+    flex-grow: 2;
+    border-radius: 100px;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.form .form-control input{
+    apperence: none;
+    flex-grow: 2;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    color: #303338;
+    line-height:1;
+    padding: 14px 20px;
+
+    
+}
+
+.form .form-control button{
+    border: none;
+    background: none;
+    border-radius: 100px;
+    color: #475569;
+    padding: 10px 25px;
+    transition: .1s;
+    cursor: pointer;
+
+}
+.form .form-control button:hover{
+    background: #f2f2f2;
+    transition: .1s;
+}
+.container .display {
+    width: 100%;
+    flex-grow: 2;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    scroll-behavior: smooth;
+}
+.container .display::-webkit-scrollbar{
+    display: none;
+  
+}
+.message{
+    padding: 12px 16px;
+    border-radius: 22px;
+    background:#ECECEC;
+    width: max-content;
+    max-width: 50%;
+    display: block;
+    min-height: max-content;
+    display: flex;
+    align-items: stretch;
+    color: #303338;
+
+}
+.message-right{
+    align-self: end;
+
+}
+.message-left{
+   background: none;
+   border: 1px solid #ECECEC;
+   color: #3C4046;
+}
